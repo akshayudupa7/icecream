@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import Helmet from "../components/Helmet/Helmet";
 import CommonSection from "../components/UI/common-section/CommonSection";
 import { Container, Row, Col } from "reactstrap";
-import ExtraIngredient from '../components/ExtraIngredient/ExtraIngredient.jsx'
+//import ExtraIngredient from '../components/ExtraIngredient/ExtraIngredient.jsx'
 import { useDispatch } from "react-redux";
 import { cartActions } from "../store/shopping-cart/cartSlice";
 import { useSelector } from "react-redux";
@@ -94,7 +94,7 @@ const PizzaDetails = () => {
       <section>
         <Container>
           <Row>
-            <Col lg="2" md="2">
+             {/*    <Col lg="2" md="2">
               <div className="product__images">
                 <div
                   className="img__item mb-3"
@@ -116,7 +116,7 @@ const PizzaDetails = () => {
                   <img src={product.image03} alt="" className="w-50" />
                 </div>
               </div>
-            </Col>
+            </Col>*/}
 
             <Col lg="4" md="4">
               <div className="product__main-img">
@@ -141,7 +141,7 @@ const PizzaDetails = () => {
               </div>
             </Col>
 
-            <Col lg='12'>
+          {/*}  <Col lg='12'>
               <div className="extraIngredientsGrid">
                 {(Object.values(ExtraIngredients)).map((ingredient) => {
                   return (
@@ -149,7 +149,7 @@ const PizzaDetails = () => {
                   )
                 })}
               </div>
-            </Col>
+            </Col>*/}
 
             <Col lg="12">
               <h6 className="description">Description</h6>
